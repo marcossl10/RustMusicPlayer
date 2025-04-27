@@ -23,7 +23,7 @@ sha256sums=('SKIP')
 # Função para compilar o código fonte
 build() {
     # Navega para o diretório do código fonte descompactado (CORRIGIDO)
-    cd "$srcdir/$_pkgbasename-$pkgver"
+    cd "$srcdir/$_pkgbasename"
 
     # Garante que o toolchain Rust esteja configurado
     # Nota: 'rustup default stable' pode exigir interação, geralmente não é necessário dentro do build.
@@ -39,12 +39,12 @@ build() {
 # Função para instalar os arquivos no diretório temporário do pacote ($pkgdir)
 package() {
     # Navega para o diretório do código fonte descompactado (CORRIGIDO)
-    cd "$srcdir/$_pkgbasename-$pkgver"
+    cd "$srcdir/$_pkgbasename"
 
     # Instala o executável principal
     # ATENÇÃO: Verifique se o nome do binário em 'target/release/' é realmente 'music-player-lite'.
     # Se o nome no Cargo.toml for diferente (ex: RustMusicPlayer), ajuste aqui.
-    install -Dm755 "target/release/music-player-lite" "$pkgdir/usr/bin/$pkgname"
+    install -Dm755 "target/release/$pkgname" "$pkgdir/usr/bin/$pkgname"
 
     # Instala o arquivo de licença (Assume que existe um arquivo LICENSE na raiz do repo)
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
@@ -60,7 +60,7 @@ package() {
 
 # Opcional: Função check() para rodar testes
 #check() {
-#    cd "$srcdir/$_pkgbasename-$pkgver"
+#    cd "$srcdir/$_pkgbasename"
 #    export RUSTUP_TOOLCHAIN=stable # Garante o toolchain para testes também
 #    cargo test --locked
 #}
