@@ -7,14 +7,15 @@ pkgver=1.1.0 # Versão do pacote
 pkgrel=1 # Revisão do PKGBUILD
 pkgdesc="Um player de música simples e leve feito em Rust com egui." # Descrição curta
 arch=('x86_64') # Arquitetura
-url="https://github.com/marcossl10/RustMusicPlayer" # URL do projeto (CORRIGIDO - sem ponto final)
+url="https://github.com/marcossl10/RustMusicPlayer.git" # URL do projeto (CORRIGIDO - sem ponto final)
 license=('MIT') # Licença (Certifique-se que o arquivo LICENSE existe no repo)
 makedepends=('rustup' 'cargo') # Dependências de compilação (Adicionado 'cargo' explicitamente)
 depends=('alsa-lib' 'libxcb' 'libxkbcommon' 'openssl') # Dependências de execução
 
 # Fonte corrigida para usar o nome do repositório correto e a variável _pkgbasename
 # ATENÇÃO: Certifique-se que a tag v1.1.0 existe no repositório RustMusicPlayer!
-source=("$_pkgbasename-v$pkgver.tar.gz::https://github.com/marcossl10/$_pkgbasename/archive/refs/tags/v$pkgver.tar.gz")
++ source=("$_pkgbasename::git+https://github.com/marcossl10/$_pkgbasename.git#branch=main")
+
 
 # Use 'SKIP' temporariamente. Rode 'updpkgsums' após o primeiro download falhar para gerar o hash correto.
 sha256sums=('SKIP')
