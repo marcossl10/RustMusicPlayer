@@ -1,7 +1,7 @@
 # /home/marcos/novprojeto/player/Cargo.toml
 
 [package]
-name = "music-player-lite"
+name = "RustMusicPlayer"
 version = "1.1.0"         
 edition = "2021"
 authors = ["MARCOS DA SILVA"]
