@@ -59,7 +59,7 @@ Se preferir compilar manualmente:
 3.  **Clone o repositório:**
     ```bash
     git clone https://github.com/marcossl10/RustMusicPlayer.git
-    cd rust-music-player-lite-alfa
+    cd RustMusicPlayer
     ```
 4.  **Compile e execute (modo debug):**
     ```bash
@@ -143,7 +143,7 @@ This package can be built and installed using the provided `PKGBUILD`.
 2.  **Clone the repository:**
     ```bash
     git clone https://github.com/marcossl10/RustMusicPlayer.git
-    cd rust-music-player-lite-alfa
+    cd RustMusicPlayer
     ```
 
 3.  **Build and install the package:**
@@ -166,7 +166,7 @@ If you prefer to compile manually:
 3.  **Clone the repository:**
     ```bash
     git clone https://github.com/marcossl10/RustMusicPlayer.git
-    cd rust-music-player-lite-alfa
+    cd RustMusicPlayer
     ```
 4.  **Compile and run (debug mode):**
     ```bash
