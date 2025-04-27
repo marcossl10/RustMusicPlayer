@@ -35,7 +35,7 @@ Este pacote pode ser construído e instalado usando o `PKGBUILD` fornecido.
 
 2.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/marcossl10/rust-music-player-lite-alfa
+    git clone https://github.com/marcossl10/RustMusicPlayer.git
     cd rust-music-player-lite-alfa
     ```
 
@@ -58,7 +58,7 @@ Se preferir compilar manualmente:
     ```
 3.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/marcossl10/rust-music-player-lite-alfa
+    git clone https://github.com/marcossl10/RustMusicPlayer.git
     cd rust-music-player-lite-alfa
     ```
 4.  **Compile e execute (modo debug):**
@@ -142,7 +142,7 @@ This package can be built and installed using the provided `PKGBUILD`.
 
 2.  **Clone the repository:**
     ```bash
-    git clone https://github.com/marcossl10/rust-music-player-lite-alfa
+    git clone https://github.com/marcossl10/RustMusicPlayer.git
     cd rust-music-player-lite-alfa
     ```
 
@@ -165,7 +165,7 @@ If you prefer to compile manually:
     ```
 3.  **Clone the repository:**
     ```bash
-    git clone https://github.com/marcossl10/rust-music-player-lite-alfa
+    git clone https://github.com/marcossl10/RustMusicPlayer.git
     cd rust-music-player-lite-alfa
     ```
 4.  **Compile and run (debug mode):**
