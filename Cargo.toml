@@ -1,0 +1,22 @@
+# /home/marcos/novprojeto/player/Cargo.toml
+
+[package]
+name = "music-player-lite"
+version = "1.1.0"         
+edition = "2021"
+authors = ["MARCOS DA SILVA"]
+
+[dependencies]
+eframe = { version = "0.27", features = ["persistence"] }
+egui = "0.27"
+# Rodio ainda é usado para output (OutputStream, Sink)
+rodio = "0.17"
+rfd = "0.14"
+lofty = "0.22.3"
+serde = { version = "1.0", features = ["derive"] }
+
+# Adiciona Symphonia com recursos padrão e para formatos comuns
+symphonia = { version = "0.5", features = ["all-formats", "all-codecs", "flac", "mp3", "vorbis", "wav", "isomp4"] }
+# Adiciona crossbeam-channel para comunicação potencialmente mais flexível (opcional, mas útil)
+crossbeam-channel = "0.5"
+rand = "0.8"
