@@ -14,7 +14,7 @@ depends=('alsa-lib' 'libxcb' 'libxkbcommon' 'openssl') # Dependências de execu�
 
 # Fonte corrigida para usar o nome do repositório correto e a variável _pkgbasename
 # ATENÇÃO: Certifique-se que a tag v1.1.0 existe no repositório RustMusicPlayer!
-+ source=("$_pkgbasename::git+https://github.com/marcossl10/$_pkgbasename.git#branch=main")
+ source=("$_pkgbasename::git+https://github.com/marcossl10/$_pkgbasename.git#branch=main")
 
 
 # Use 'SKIP' temporariamente. Rode 'updpkgsums' após o primeiro download falhar para gerar o hash correto.
