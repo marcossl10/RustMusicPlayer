@@ -36,7 +36,7 @@ Este pacote pode ser construído e instalado usando o `PKGBUILD` fornecido.
 2.  **Clone o repositório:**
     ```bash
     git clone https://github.com/marcossl10/RustMusicPlayer.git
-    cd rust-music-player-lite-alfa
+    cd RustMusicPlayer
     ```
 
 3.  **Construa e instale o pacote:**
