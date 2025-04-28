@@ -28,6 +28,7 @@ package() {
     install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
 
     install -Dm644 "icons/rust-music-player-lite-16x16.png" "$pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-24x24.png" "$pkgdir/usr/share/icons/hicolor/24x24/apps/$pkgname.png"
     install -Dm644 "icons/rust-music-player-lite-32x32.png" "$pkgdir/usr/share/icons/hicolor/32x32/apps/$pkgname.png"
     install -Dm644 "icons/rust-music-player-lite-48x48.png" "$pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png"
     install -Dm644 "icons/rust-music-player-lite-64x64.png" "$pkgdir/usr/share/icons/hicolor/64x64/apps/$pkgname.png"
