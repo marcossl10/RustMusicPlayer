@@ -20,7 +20,7 @@ use crossbeam_channel::{unbounded, Receiver as CrossbeamReceiver, Sender as Cros
 use symphonia::core::audio::{SignalSpec, SampleBuffer};
 use symphonia::core::codecs::{Decoder, DecoderOptions, CodecParameters};
 // Importar SeekErrorKind de errors (ainda necessário para o match, mesmo que não usemos Other)
-use symphonia::core::errors::{Error as SymphoniaError, SeekErrorKind};
+use symphonia::core::errors::Error as SymphoniaError;
 // Remover Track não utilizado de formats
 use symphonia::core::formats::{FormatOptions, FormatReader, SeekMode, SeekTo};
 use symphonia::core::io::MediaSourceStream;
