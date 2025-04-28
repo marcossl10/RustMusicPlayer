@@ -45,7 +45,7 @@ package() {
     install -Dm755 "target/release/RustMusicPlayer" "$pkgdir/usr/bin/$pkgname"
 
     # Instala o arquivo de licença (Assume que existe um arquivo LICENSE na raiz do repo)
-    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 
     # Opcional: Instala o ícone (se existir 'assets/icon.png' no repo)
     # Descomente e ajuste o caminho se necessário
