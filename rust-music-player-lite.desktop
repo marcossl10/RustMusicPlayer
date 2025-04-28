@@ -3,6 +3,7 @@ Name=Rust Music Player Lite
 GenericName=Music Player
 Comment=Um player de música simples e leve feito em Rust com egui.
 Exec=rust-music-player-lite
+Icon=/home/marcos/novprojeto/player/icons
 Terminal=false
 Type=Application
 Categories=Audio;Music;Player;

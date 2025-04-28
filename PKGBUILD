@@ -49,7 +49,20 @@ package() {
     install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
     # Opcional: Instala o ícone (se existir 'assets/icon.png' no repo)
     # Descomente e ajuste o caminho se necessário
-    # install -Dm644 "assets/icon.png" "$pkgdir/usr/share/icons/hicolor/64x64/apps/$pkgname.png"
+    package() {
+    cd "$srcdir/$_pkgbasename"
+    install -Dm755 "target/release/RustMusicPlayer" "$pkgdir/usr/bin/$pkgname"
+    install -Dm644 "LICENCE.txt" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
+
+    install -Dm644 "icons/rust-music-player-lite-16x16.png" "$pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-32x32.png" "$pkgdir/usr/share/icons/hicolor/32x32/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-48x48.png" "$pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-64x64.png" "$pkgdir/usr/share/icons/hicolor/64x64/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-128x128.png" "$pkgdir/usr/share/icons/hicolor/128x128/apps/$pkgname.png"
+    install -Dm644 "icons/rust-music-player-lite-256x256.png" "$pkgdir/usr/share/icons/hicolor/256x256/apps/$pkgname.png"
+}
+
 
     # Opcional: Instala o arquivo .desktop (se existir 'assets/rust-music-player-lite.desktop' no repo)
     # Descomente e ajuste o caminho se necessário
