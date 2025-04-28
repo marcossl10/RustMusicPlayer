@@ -24,7 +24,7 @@ build() {
 package() {
     cd "$srcdir/$_pkgbasename"
     install -Dm755 "target/release/RustMusicPlayer" "$pkgdir/usr/bin/$pkgname"
-    install -Dm644 "LICENCE.txt" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm644 "LICENSE.txt" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
     install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
 
     install -Dm644 "icons/rust-music-player-lite-16x16.png" "$pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png"
