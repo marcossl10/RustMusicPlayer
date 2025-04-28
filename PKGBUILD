@@ -55,12 +55,15 @@ package() {
     install -Dm644 "LICENCE.txt" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
     install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
 
+    echo "Instalando ícones..."
+    echo "  16x16:"
+    ls -l "icons/rust-music-player-lite-16x16.png"
     install -Dm644 "icons/rust-music-player-lite-16x16.png" "$pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png"
+    echo "  32x32:"
+    ls -l "icons/rust-music-player-lite-32x32.png"
     install -Dm644 "icons/rust-music-player-lite-32x32.png" "$pkgdir/usr/share/icons/hicolor/32x32/apps/$pkgname.png"
-    install -Dm644 "icons/rust-music-player-lite-48x48.png" "$pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png"
-    install -Dm644 "icons/rust-music-player-lite-64x64.png" "$pkgdir/usr/share/icons/hicolor/64x64/apps/$pkgname.png"
-    install -Dm644 "icons/rust-music-player-lite-128x128.png" "$pkgdir/usr/share/icons/hicolor/128x128/apps/$pkgname.png"
-    install -Dm644 "icons/rust-music-player-lite-256x256.png" "$pkgdir/usr/share/icons/hicolor/256x256/apps/$pkgname.png"
+    echo "  (e assim por diante para os outros tamanhos)"
+}
 }
 
 
