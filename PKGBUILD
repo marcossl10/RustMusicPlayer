@@ -41,10 +41,8 @@ package() {
     # Navega para o diretório do código fonte descompactado (CORRIGIDO)
     cd "$srcdir/$_pkgbasename"
 
-    # Instala o executável principal
-    # ATENÇÃO: Verifique se o nome do binário em 'target/release/' é realmente 'music-player-lite'.
-    # Se o nome no Cargo.toml for diferente (ex: RustMusicPlayer), ajuste aqui.
-    install -Dm755 "target/release/$pkgname" "$pkgdir/usr/bin/$pkgname"
+    # Instala o executável principal (CORRIGIDO - usando o nome real do executável)
+    install -Dm755 "target/release/RustMusicPlayer" "$pkgdir/usr/bin/$pkgname"
 
     # Instala o arquivo de licença (Assume que existe um arquivo LICENSE na raiz do repo)
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
