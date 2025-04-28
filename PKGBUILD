@@ -46,7 +46,7 @@ package() {
 
     # Instala o arquivo de licença (Assume que existe um arquivo LICENSE na raiz do repo)
     install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
-
+    install -Dm644 "$pkgname.desktop" "$pkgdir/usr/share/applications/$pkgname.desktop"
     # Opcional: Instala o ícone (se existir 'assets/icon.png' no repo)
     # Descomente e ajuste o caminho se necessário
     # install -Dm644 "assets/icon.png" "$pkgdir/usr/share/icons/hicolor/64x64/apps/$pkgname.png"
