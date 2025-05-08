@@ -1,9 +1,11 @@
 [Desktop Entry]
 Name=Rust Music Player Lite
 GenericName=Music Player
-Comment=Um player de música simples e leve feito em Rust com egui.
-Exec=rust-music-player-lite
+Comment=Um player de música simples e leve feito em Rust
+Exec=rust-music-player-lite %U 
 Icon=rust-music-player-lite
 Terminal=false
 Type=Application
 Categories=Audio;Music;Player;
+MimeType=audio/mpeg;audio/mp3;audio/ogg;audio/flac;audio/wav;
+StartupNotify=true
